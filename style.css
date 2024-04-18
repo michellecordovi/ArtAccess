@@ -1,0 +1,372 @@
+/* UNIVERSAL STYLES */
+* {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+}
+
+html {
+      font-size: 16px;
+}
+
+body {
+      background-color:#f4f4f4;
+      font-family: Montserrat, Helvetica, sans-serif;
+      font-weight: 300;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0px;
+}
+
+h1,
+h2,
+h3,
+#logo {
+      font-family: "Poiret One", Helvetica, sans-serif;
+}
+
+h1 {
+      color:#d77948;
+      font-size: 3rem;
+      font-weight: 300;
+}
+
+h2 {
+      font-size: 2rem;
+}
+
+/* NAVIGATION BAR */
+header {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+}
+
+.navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+#logo {
+      font-size: 3rem;
+      margin: 0px;
+      color: #d77948;
+      padding: .5rem 0rem;
+}
+
+.navbar ul {
+      padding: 0px;
+      margin: 0px;
+}
+
+.navbar  li {
+      list-style-type: none;
+      display: inline;
+      padding: 10px 20px;
+      font-size: 1.25rem
+}
+
+.navbar a {
+      color: black;
+      text-decoration: none;
+}
+
+   @media only screen and (max-width: 500px) {
+      .navbar {
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 3rem;
+
+      }
+
+      .navbar #logo {
+            width: 17rem;
+      }
+
+      .navbar ul {
+            display: flex;
+      
+      }
+   }
+
+
+/* BANNER */
+
+.banner {
+      width: 100%;
+      background-image: url("./images/banner-background.jpg");
+      background-color: #f4f4f4;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      width: 100%;
+      height: 37rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0px 6rem;
+}
+
+.hero {
+      background-color: #f4f4f4;
+      height: fit-content;
+      width: 40rem;
+      border-radius: 1rem; 
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.hero-box {
+      text-align: center;
+}
+
+.hero-box h1 {
+      margin-bottom: 1.5rem;
+}
+
+.hero-box h2 {
+      margin: 2rem;
+}
+
+button {
+      height: 3rem;
+      width: 12rem;
+      border-radius: 0.5rem;
+      background-color: #e4ce8e;
+      border: 0px;
+      font-family: montserrat;
+      font-size: 1rem;
+      color: white;
+      font-weight: 700;
+      box-shadow: -5px 5px #d77948;
+}
+
+@media only screen and (max-width: 500px) {
+      .hero {
+            width: 50rem;
+            height: 30rem;
+      }
+
+      .hero-box h1 {
+            font-size: 4rem;
+      }
+
+      .hero-box h2 {
+            font-size: 2.5rem;
+      }
+}
+
+/* CLASSES */
+
+.center {
+      background: linear-gradient( #f4f4f4, #e2c1753a) ;
+      display: flex;
+      justify-content: center;
+}
+
+.classes {
+      width: 80%;
+      height: fit-content;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+}
+
+.classes h1 {
+      margin-bottom: 1.5rem;
+      color: #d77948;
+}
+
+.class-selections {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+}
+
+.selection {
+      background-color: #f4f4f4;
+      color: #d77948;
+      height: 20rem;
+      width: 20rem;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+}
+
+.selection img {
+      height: 80%;
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1360px) {
+      .class-selections {
+      justify-content: space-evenly;
+      flex-grow: 1;
+    }
+
+    .selections {
+      height: max-content;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+      .selection {
+            flex-grow: 1;
+            max-width: 600px;
+      }
+}
+
+@media only screen and (max-width: 500px) {
+      .selection {
+            width: 100%;
+            flex-grow:1;
+      }
+}
+
+/* TEAM SECTION */
+.bottom {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.team {
+      width: 100%;
+      height: fit-content;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.team h1 {
+      margin-bottom: 2rem;
+}
+
+.team-box {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+}
+
+.feature {
+      height: 35rem;
+      width: 27rem;
+      border: 2px solid #d77948;
+      border-radius: 10px;
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+.feature img {
+      width: 90%;
+      height: 50%;
+      margin-bottom: 2rem;
+}
+
+.feature h2 {
+      margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 975px) {
+      .team-box {
+       justify-content: center;
+      }
+
+      .feature {
+            width: 30rem;
+      }
+}
+
+@media only screen and (max-width: 500px) {
+      .feature {
+            width: 40rem;
+            height: 50rem;
+      }
+}
+
+
+/* FOOTER */
+footer {
+      width: 100%;
+}
+
+.footer {
+      flex-grow: 1;
+      background-color: #d77948;
+      color:#f4f4f4;
+      width: 100%;
+      height: auto;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+#footer-logo {
+      font-size: 3rem;
+      display: flex;
+}
+
+.contact {
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      flex-wrap: wrap;
+}
+
+.copyright {
+      background-color: #e2c1753a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.25rem;
+}
+
+@media only screen and (max-width: 840px) {
+      footer {
+            width: 840px;
+            margin: 0px;
+      }
+
+      .footer {
+            flex-direction: column;
+            gap: 2rem;
+      }
+
+      #footer-logo {
+            font-size: 2rem;
+            width:fit-content;
+            margin: 0;
+            padding: 0px;
+      }
+      
+}
