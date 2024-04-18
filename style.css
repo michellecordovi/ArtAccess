@@ -13,11 +13,11 @@ body {
       background-color:#f4f4f4;
       font-family: Montserrat, Helvetica, sans-serif;
       font-weight: 300;
-      display: flex;
+      /* display: flex;
       flex-direction:column;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: wrap; */
       margin: 0;
       padding: 0px;
 }
@@ -48,6 +48,16 @@ main {
       justify-content: center;
 }
 
+@media only screen and (max-width: 500px) {
+      body {
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      }
+}
+
 
 /* NAVIGATION BAR */
 header {
@@ -76,6 +86,7 @@ header {
 .navbar ul {
       padding: 0px;
       margin: 0px;
+      display: flex;
 }
 
 .navbar  li {
@@ -90,12 +101,15 @@ header {
       text-decoration: none;
 }
 
-@media only screen and (max-width: 500px) {
-    
-      .navbar {
-            /* flex-direction: row; */
-            justify-content: space-around;
+@media only screen and (max-width: 501px) {
+      header {
+            width: 100%;
       }
+      
+      .navbar {
+            flex-direction: row; 
+            justify-content: space-around;
+       }
 
       .navbar #logo {
             width: 17rem;
@@ -166,7 +180,7 @@ button {
       box-shadow: -5px 5px #d77948;
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
       .hero {
             width: auto;
             height: auto;
@@ -179,7 +193,7 @@ button {
       .hero-box h2 {
             font-size: 1.5rem;
       }
-}
+} */
 
 
 /* CLASSES */
@@ -232,7 +246,7 @@ button {
 }
 
 
-@media only screen and (max-width: 1360px) {
+ /* @media only screen and (max-width: 1360px) {
       .class-selections {
       justify-content: space-evenly;
       flex-grow: 1;
@@ -255,7 +269,7 @@ button {
             width: 100%;
             flex-grow:1;
       }
-}
+}  */
 
 /* TEAM SECTION */
 .bottom {
@@ -318,14 +332,14 @@ button {
       .feature {
             width: auto;
       }
-} 
+}  */
 
-/* @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
       .feature {
             width:fit-content;
             height: fit-content;
       }
-} */
+}
 
 
 /* FOOTER */
@@ -365,23 +379,27 @@ footer {
       padding: 0.25rem;
 }
 
-@media only screen and (max-width: 840px) {
-      footer {
-            margin: 0px;
-      }
+ /* @media only screen and (max-width: 500px) {
+   
+     footer {
+      width: 500px;
+     }
 
       .footer {
             height:fit-content;
-            width: 100%;
+            width: 500px;
+            display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             gap: 0.25rem;
       }
 
       #footer-logo {
             font-size: 2rem;
-            width:fit-content;
+            width:100%;
             margin: 0;
             padding: 0px;
       }
       
-}
+}  */
